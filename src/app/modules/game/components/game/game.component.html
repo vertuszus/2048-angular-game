@@ -1,0 +1,47 @@
+<div class="game-container">
+  <h2>Очки:
+    <strong>{{ gameService.scores }}</strong>
+    <button
+      class="new-game-button"
+      (click)="gameService.resetGame()"
+    >Новая игра</button>
+  </h2>
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+    </div>
+    <div class="grid-row">
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+    </div>
+    <div class="grid-row">
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+    </div>
+    <div class="grid-row">
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+    </div>
+
+    <div class="items">
+      <div
+        *ngFor = "let item of gameService.items"
+        class="item"
+        [ngStyle]="getStyles(item)">
+        <div class="item-title">{{ item.value }}</div>
+      </div>
+    </div>
+    <div *ngIf="gameService.theEnd" class="overlay">
+      <div class="overlay-text">Конец</div>
+    </div>
+  </div>
+</div>
