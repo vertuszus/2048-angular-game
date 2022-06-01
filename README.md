@@ -1,4 +1,4 @@
-# 2048Game
+Клон на игру 2048, написанный на Angular и Typescript
 
 https://angular-ivy-k71kev.stackblitz.io/
 
