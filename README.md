@@ -1,6 +1,9 @@
 # 2048Game
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+https://angular-ivy-k71kev.stackblitz.io/
+
+![image](https://user-images.githubusercontent.com/72495167/171384672-48affde1-fc6f-4795-99ee-5fa1ef0ac732.png)
+
 
 ## Development server
 
